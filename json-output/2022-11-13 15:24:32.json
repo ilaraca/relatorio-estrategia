@@ -1,0 +1,142 @@
+[
+	{
+		"id": "M9rKGRqNr6",
+		"created_at": "2022-11-13T17:23:55.806Z",
+		"color": 1,
+		"roll": 7,
+		"server_seed": "9efe48d8de04bd943eb113edaf64a59fc778f548a65bdb0814ff51c5a07fde83"
+	},
+	{
+		"id": "AXlOgvaylO",
+		"created_at": "2022-11-13T17:23:25.789Z",
+		"color": 2,
+		"roll": 9,
+		"server_seed": "7b2ffe82e4d00abfb8c35141af17ab08e029b596e26f73c9c690dbea1f5fd365"
+	},
+	{
+		"id": "OWldQWbAr3",
+		"created_at": "2022-11-13T17:22:55.773Z",
+		"color": 1,
+		"roll": 3,
+		"server_seed": "bd8ecb6149d0fcb250fdbf7cd3cca73f7e08c57cc8388c6beae38182e24cf396"
+	},
+	{
+		"id": "3elYO7VG1L",
+		"created_at": "2022-11-13T17:22:25.750Z",
+		"color": 2,
+		"roll": 14,
+		"server_seed": "ea8d0166d62bc854811587d482e0264baca430c2191164c4bae18764e898474e"
+	},
+	{
+		"id": "GR1pLbea15",
+		"created_at": "2022-11-13T17:21:55.735Z",
+		"color": 1,
+		"roll": 1,
+		"server_seed": "210339369cc366a8af5bc88156cb9c3c0832fc2674bd68c3ff60d1ceadd6ef15"
+	},
+	{
+		"id": "KRkb58Aw1L",
+		"created_at": "2022-11-13T17:21:25.720Z",
+		"color": 1,
+		"roll": 3,
+		"server_seed": "e87145dcf5501993acad47ef6c38f70e49302c1abbf80de0d06d8bced2a3179e"
+	},
+	{
+		"id": "3EryvNRN1j",
+		"created_at": "2022-11-13T17:20:55.706Z",
+		"color": 1,
+		"roll": 7,
+		"server_seed": "a3d8789261c91d71c2f518280bfca4dcb38c013e4bfcefed8e2734de31b443a9"
+	},
+	{
+		"id": "yAlAyP7RlG",
+		"created_at": "2022-11-13T17:20:25.694Z",
+		"color": 2,
+		"roll": 10,
+		"server_seed": "8834c238136738d5124ae75c35fcf7223a45e67937de49d52ea7481d8dacacf5"
+	},
+	{
+		"id": "WplzgE5Orn",
+		"created_at": "2022-11-13T17:19:55.679Z",
+		"color": 2,
+		"roll": 10,
+		"server_seed": "cb01c0bfb10dd8ec3be6a64652f41c565906ccf585dbaa5c26d98b01fef56e87"
+	},
+	{
+		"id": "LKl30QwyrN",
+		"created_at": "2022-11-13T17:19:25.665Z",
+		"color": 1,
+		"roll": 5,
+		"server_seed": "a7b214f6ae0ed806fb1f9f2db4ae9b090a5012e1ba3c49a3de0e848a1b09cee9"
+	},
+	{
+		"id": "jxrM4z20lQ",
+		"created_at": "2022-11-13T17:18:55.649Z",
+		"color": 2,
+		"roll": 13,
+		"server_seed": "a29e11dc535ea7af136b75945b1b0417581ef43fc294c9e060e1417452c83597"
+	},
+	{
+		"id": "9YrJWa801K",
+		"created_at": "2022-11-13T17:18:25.633Z",
+		"color": 2,
+		"roll": 12,
+		"server_seed": "8bba8dd1b53bf7f3b47856df818ac7e0cfe160f102bba7dee5f42bce09b45c8a"
+	},
+	{
+		"id": "mDlZ7LBOrj",
+		"created_at": "2022-11-13T17:17:55.620Z",
+		"color": 1,
+		"roll": 4,
+		"server_seed": "f35141ba054dc858b5c5ae20a6f4a949b1cc1ee2f00406eaf2abf89e8f4dcfd7"
+	},
+	{
+		"id": "96rXYKDR1O",
+		"created_at": "2022-11-13T17:17:25.604Z",
+		"color": 1,
+		"roll": 1,
+		"server_seed": "72ed7199e55a890438e84d874a09c75e4b88a3a9a1cdb1dff1e43e7cb2f8afc5"
+	},
+	{
+		"id": "KV16abX7rB",
+		"created_at": "2022-11-13T17:16:55.591Z",
+		"color": 2,
+		"roll": 12,
+		"server_seed": "10193b05829d41b0ce4ee8b7fd8a1959f7722e2bfafdf2037dc058b8401d0107"
+	},
+	{
+		"id": "pJ1oKyPO1d",
+		"created_at": "2022-11-13T17:16:25.575Z",
+		"color": 1,
+		"roll": 5,
+		"server_seed": "c521b97cad06e586a71f667d73d0a97bb2826e44ad7cf7d00d218102402b8ddd"
+	},
+	{
+		"id": "YArwRLGDlz",
+		"created_at": "2022-11-13T17:15:55.557Z",
+		"color": 1,
+		"roll": 2,
+		"server_seed": "d621f29cdac7f206b1dcc5b1ebf9139cae52c8d90dbc362508ea00f55f98884b"
+	},
+	{
+		"id": "4ekjJ47Nk9",
+		"created_at": "2022-11-13T17:15:25.540Z",
+		"color": 1,
+		"roll": 6,
+		"server_seed": "ffe4fa604aca9735871dcbf5fac4c6c2cb64d6b5d4b5d2c535763b57f9971330"
+	},
+	{
+		"id": "2O1BpeLWlK",
+		"created_at": "2022-11-13T17:14:55.526Z",
+		"color": 0,
+		"roll": 0,
+		"server_seed": "d96d6a1f47feeb801eade24d5f47a3b78a8d028f0945060add6a911c91a3c5c4"
+	},
+	{
+		"id": "o5rVAdgOlK",
+		"created_at": "2022-11-13T17:14:25.511Z",
+		"color": 1,
+		"roll": 3,
+		"server_seed": "d96bb5997f230ee59bfac90d3696f343ceb510593acb6490c5ddf9013742fbf1"
+	}
+]

@@ -2,7 +2,6 @@ const https = require('https');
 const fs = require('fs');
 require("dotenv").config();
 let now = new Date(). toLocaleString();
-const data_atual = now;
 
 const request = https.request(process.env.URL, (response) => {
     let data = '';
@@ -13,7 +12,7 @@ const request = https.request(process.env.URL, (response) => {
     response.on('end', () => {
         const body = JSON.parse(data);
 
-        fileToJSON(JSON.stringify(body))
+        JSONtoFileJSON(JSON.stringify(body,null,'\t'))
         
     });
 })
@@ -24,22 +23,18 @@ request.on('error', (error) => {
   
 request.end() 
 
-// console.log(process.env.URL)
-// console.log(JSON.stringify(request))
-// console.log(fs)
 
-
-function fileToJSON(str) {
-    fs.appendFile(`./json-output/${data_atual}`+'.json', JSON.stringify(str), function (err) {
+function JSONtoFileJSON(str) {
+    fs.writeFile(`./json-output/${now}`+'.json', JSON.parse(JSON.stringify(str, null, '\t')), function (err) {
         if (err) throw err;
         console.log('Arquivo Salvo!');
     });
 }
 
+ 
 
-const file = JSON.stringify(request);
 
-console.log("aquuuuuui"+file)
+
 // const string = JSON.stringify(request)
 // console.log(string)
     
