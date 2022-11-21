@@ -5,8 +5,8 @@ import cron from 'node-cron';
 
 dotenv.config()
 
-cron.schedule('*/9 * * * *', async () => {
-    console.log("gravando um novo .json a cada 9 minutos");
+cron.schedule('*/10 * * * *', async () => {
+    console.log("gravando um novo .json a cada 10 minutos");
 
     await fetch(process.env.URL, {
         method: 'GET'
