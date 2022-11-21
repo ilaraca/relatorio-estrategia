@@ -18,13 +18,19 @@
   },
   "homepage": "https://github.com/ilaraca/relatorio-estrategia#readme",
   "dependencies": {
+    "debug": "^4.3.4",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "fs": "^0.0.1-security",
+    "googleapis": "^109.0.1",
     "https": "^1.0.0",
     "node-cron": "^3.0.2",
-    "node-fetch": "^3.3.0"
+    "node-fetch": "^3.3.0",
+    "path": "^0.12.7",
+    "stream": "^0.0.2",
+    "stream-concat": "^1.0.0",
+    "util": "^0.12.5",
+    "xlsx": "^0.18.5"
   },
-  "keywords": [],
-  "devDependencies": {}
+  "keywords": []
 }
