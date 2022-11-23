@@ -1,6 +1,9 @@
 import fs from 'fs'
 import { google } from 'googleapis'
 import dotenv from 'dotenv';
+import debug from 'debug'
+//Cria um log sem utilizar o console.log
+const log = debug('app:excel-to-google-drivegit ')
 
 dotenv.config()
 
@@ -35,7 +38,7 @@ async function uploadFile(){
         return response.data.id
 
     } catch(err){
-        console.log('Upload file error', err)
+        log(`upload file error: ${err}`)
     }
 }
 
