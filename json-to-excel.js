@@ -1,5 +1,6 @@
 import XLSX from 'xlsx'
 import path from 'path'
+import utils from './utils.js'
 
 //Nome do Header Sheet
 const workSheetColumnName = ["Id",
@@ -9,12 +10,12 @@ const workSheetColumnName = ["Id",
     "Número",
     "Código"];
 const workSheetName = 'doubles'; 
-const filePath = './doubles.xlsx';
-const pathToTheFile = './json-output/final.json'
+const filePath = `./excel-output/doubles-${utils.dataAtual()}.xlsx`;
+const pathToTheFile = `./unique-json-output/unique-${utils.dataAtual()}.json`
 
 import { dirname, join } from 'path'
 import { promisify } from 'util'
-import { promises, createReadStream, createWriteStream, readFile, writeFile } from 'fs'
+import { promises, createReadStream, createWriteStream, readFile, writeFile, unlink } from 'fs'
 import { pipeline, Transform } from 'stream'
 import StreamConcat from 'stream-concat'
 import debug from 'debug'
@@ -23,12 +24,12 @@ const pipelineAsync = promisify(pipeline)
 const { readdir } = promises
 
 //Cria um log sem utilizar o console.log
-const log = debug('app:concat')
+const log = debug('json-to-excel:')
 
 const { pathname: currentFile } = new URL(import.meta.url)
 const cwd = dirname(currentFile)
 const filesDir = `${cwd}/json-output`
-const output = `${cwd}/json-output/final.json`
+const output = `${cwd}/unique-json-output/unique-${utils.dataAtual()}.json`
 
 console.time('concat-data')
 const files = (await readdir(filesDir)).filter(item => !(!!~item.indexOf('.DS_Store')))
@@ -106,6 +107,17 @@ setTimeout(() => {
     }
 
 }, 5000)
+
+setTimeout(()=>{
+
+    files.map(file => {
+        unlink(`./json-output/${file}`, function (err){
+            if (err) throw err;
+            log(`arquivo deletado!`)
+        })
+    })
+
+}, 10000)
 
 await pipelineAsync(
     combinedStreams,
