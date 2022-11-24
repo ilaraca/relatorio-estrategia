@@ -51,8 +51,11 @@ build/Release
 node_modules/
 jspm_packages/
 
-#json-output
+#pastas de output e bkp
 json-output/
+excel-output/
+unique-json-output/
+bkp/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
