@@ -1,9 +1,19 @@
 import fs from 'fs';
 
+function dataHoraAtual(){
+    let dataAtual = [];
+    let finaldata;
+    new Date(). toLocaleTimeString().split('').forEach(e => {
+        dataAtual.push(e.replace('/', '-'))
+    })
+    finaldata = dataAtual.join('')
+    return finaldata;
+}
+
 function dataAtual(){
     let dataAtual = [];
     let finaldata;
-    new Date(). toLocaleString().split('').forEach(e => {
+    new Date(). toLocaleDateString().split('').forEach(e => {
         dataAtual.push(e.replace('/', '-'))
     })
     finaldata = dataAtual.join('')
@@ -11,10 +21,10 @@ function dataAtual(){
 }
 
 function JSONtoFileJSON(str) {
-    fs.writeFile(`./json-output/${dataAtual()}`+'.json', JSON.parse(JSON.stringify(str, null, '\t')), function (err) {
+    fs.writeFile(`./json-output/${dataHoraAtual()}`+'.json', JSON.parse(JSON.stringify(str, null, '\t')), function (err) {
         if (err) throw err;
         console.log('Arquivo Salvo!');
     });
 }
 
-export default { dataAtual, JSONtoFileJSON }
+export default { dataHoraAtual, dataAtual, JSONtoFileJSON }
